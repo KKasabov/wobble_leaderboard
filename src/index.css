@@ -1,14 +1,72 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #636569;
+    text-align: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.topImage{
+    padding-top:2%
+}
+h1{
+    padding-top:1%;
+    padding-bottom:1%;
+}
+ol {
+    /* border: solid 1px #A7B5C3; */
+    /* list-style-type: none; */
+    text-align: left;
+    margin: 0;
+    z-index: 1;
+    padding: 0;
+}
+
+ol::after {
+    content: '';
+    background: url('compete-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+li {
+    margin: 10px;
+}
+
+.fR {
+    float: right;
+}
+
+.container {
+    width: 100%;
+}
+
+.left {
+    float: left;
+    width: 30%;
+}
+
+.right {
+    float: right;
+    width: 30%;
+}
+
+.center {
+    margin: 0 auto;
+    width: 30%;
+    position: relative;
+
 }
