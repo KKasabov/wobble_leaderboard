@@ -7,6 +7,19 @@ body {
     color: #636569;
     text-align: center;
 }
+body::after {
+    content: '';
+    background: url('compete-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -25,21 +38,6 @@ ol {
     z-index: 1;
     padding: 0;
 }
-
-ol::after {
-    content: '';
-    background: url('compete-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.25;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
 li {
     margin: 10px;
 }
